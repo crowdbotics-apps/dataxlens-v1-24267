@@ -29,6 +29,16 @@ class User(AbstractUser):
         max_length=254,
     )
     firstname = models.CharField(
+        null=True,
+        blank=True,
+        max_length=256,
+    )
+    lastname = models.CharField(
+        max_length=256,
+        null=True,
+        blank=True,
+    )
+    password = models.CharField(
         max_length=256,
         null=True,
         blank=True,
